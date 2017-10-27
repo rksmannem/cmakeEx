@@ -1,0 +1,8 @@
+1. rmannem@mldwl3650-l:~$ cd  ~/mydev/sublimeCodeSamples/tests/build
+2. rmannem@mldwl3650-l:~/mydev/sublimeCodeSamples/tests/build$ cmake -DCMAKE_INSTALL_PREFIX=/home/MAGICLEAP/rmannem/mydev/sublimeCodeSamples/ ..
+3. rmannem@mldwl3650-l:~/mydev/sublimeCodeSamples/tests/build$ make
+4. rmannem@mldwl3650-l:~/mydev/sublimeCodeSamples/tests/build$ make install
+
+Now Check the directory ~/mydev/sublimeCodeSamples/bin for the Test Executables...
+
+5. rmannem@mldwl3650-l:~/mydev/sublimeCodeSamples/tests/build$ ../../runAllTests.sh
