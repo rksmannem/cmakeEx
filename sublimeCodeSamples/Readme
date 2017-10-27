@@ -1,5 +1,6 @@
 1. rmannem@mldwl3650-l:~$ cd  ~/mydev/sublimeCodeSamples/tests/build
 2. rmannem@mldwl3650-l:~/mydev/sublimeCodeSamples/tests/build$ cmake -DCMAKE_INSTALL_PREFIX=/home/MAGICLEAP/rmannem/mydev/sublimeCodeSamples/ ..
+							       cmake -DCMAKE_INSTALL_PREFIX=/home/MAGICLEAP/rmannem/mydev/gitRepos/cmakeEx/sublimeCodeSamples/ ..
 3. rmannem@mldwl3650-l:~/mydev/sublimeCodeSamples/tests/build$ make
 4. rmannem@mldwl3650-l:~/mydev/sublimeCodeSamples/tests/build$ make install
 

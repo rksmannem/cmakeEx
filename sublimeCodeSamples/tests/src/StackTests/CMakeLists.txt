@@ -1,6 +1,7 @@
 set (PROJ_DIR "$ENV{HOME}/mydev/sublimeCodeSamples")
 set (PROJ_INC "${PROJ_DIR}/include")
 set (PROJ_SRC "${PROJ_DIR}/src")
+set (PROJ_SRC_STACK "${PROJ_SRC}/Stack")
 set (PROJ_LIB "${PROJ_DIR}/lib")
 set (PROJ_TESTS "${PROJ_DIR}/tests")
 set (PROJ_BIN "${PROJ_DIR}/bin")
@@ -29,7 +30,7 @@ include_directories(
 
 #Test for calc class
 set( TEST_EXE StackTests)
-file(GLOB SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp" "${PROJ_SRC}/Stack.cpp")
+file(GLOB SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp" "${PROJ_SRC_STACK}/Stack.cpp")
 add_executable(${TEST_EXE} ${PROJ_TESTS}/Main_TestAll.cpp ${SOURCES})
 target_link_libraries(${TEST_EXE} ${GTEST_LIBRARIES} pthread)
 
