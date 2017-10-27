@@ -1,0 +1,14 @@
+#set (CMAKE_CXX_STANDARD 11)
+add_compile_options(-std=c++11)
+
+cmake_minimum_required(VERSION 3.2.2)
+project(student_test)
+set(CMAKE_BUILD_TYPE, Release)
+
+include_directories(include)
+
+file(GLOB SOURCES "src/*.cpp")
+
+#Generate the shared library from the sources
+add_library(testStudent_shared SHARED ${SOURCES})
+add_library(testStudent_static STATIC ${SOURCES})

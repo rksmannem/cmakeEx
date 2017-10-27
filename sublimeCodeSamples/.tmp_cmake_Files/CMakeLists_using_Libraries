@@ -1,0 +1,18 @@
+#set (CMAKE_CXX_STANDARD 11)
+add_compile_options(-std=c++11)
+
+cmake_minimum_required(VERSION 3.2.2)
+project (TestLibrary)
+
+#For the shared library:
+set ( PROJECT_LINK_LIBS libtestStudent_shared.so )
+link_directories(~/mydev/sublimeCodeSamples/lib)
+
+#For the static library:
+#set ( PROJECT_LINK_LIBS libtestStudent_static.a )
+#link_directories( ~/mydev/sublimeCodeSamples/lib) 
+
+include_directories(~/mydev/sublimeCodeSamples/include)
+
+add_executable(libtestDynamic ~/mydev/sublimeCodeSamples/tests/.regularTests/test_student.cpp)
+target_link_libraries(libtestDynamic ${PROJECT_LINK_LIBS})

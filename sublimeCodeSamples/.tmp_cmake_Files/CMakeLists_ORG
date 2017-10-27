@@ -1,0 +1,16 @@
+#set (CMAKE_CXX_STANDARD 11)
+add_compile_options(-std=c++11)
+
+cmake_minimum_required(VERSION 3.2.2)
+project (directory_student)
+
+#Bring the headers, such as *.h into the project
+include_directories(include)
+
+#Manually Add source(*.cpp) files using set command
+#set(SOURCES src/quickSort.cpp src/test_quickSort.cpp)
+
+#use file(GLOB ...) for adding sources using wildcards
+file(GLOB SOURCES "src/*.cpp")
+
+add_executable(student ${SOURCES})
