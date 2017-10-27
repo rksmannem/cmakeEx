@@ -1,1 +1,0 @@
-/usr/bin/c++   -g -O0 -Wall -fprofile-arcs -ftest-coverage   -fprofile-arcs -ftest-coverage -lgcov CMakeFiles/StackTests.dir/__/__/Main_TestAll.o CMakeFiles/StackTests.dir/Stack_Test.o CMakeFiles/StackTests.dir/home/MAGICLEAP/rmannem/mydev/sublimeCodeSamples/src/Stack.o  -o StackTests -rdynamic -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 
