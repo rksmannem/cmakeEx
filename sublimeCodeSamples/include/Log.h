@@ -15,7 +15,7 @@
 
 #define LOG_F(log_color, log_type, format, ...) \
 printf("%s[%s : %s] ", log_color, LOG_TAG, log_type);\
-printf("[%s:%d] %s ", __FILE__, __LINE__, __PRETTY_FUNCTION__);\
+printf(" %s ", __PRETTY_FUNCTION__);\
 printf(format, ##__VA_ARGS__);\
 printf("\033[0m\n")
 
