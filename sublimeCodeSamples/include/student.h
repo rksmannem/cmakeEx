@@ -36,7 +36,7 @@ class student
 			return sId;
 		}
 
-
+		friend std::ostream& operator<<(const student&, std::ostream& );
 
 	private:
 		std::string sName;

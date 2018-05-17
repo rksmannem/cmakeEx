@@ -18,3 +18,11 @@ void student::display() const
 	std::cout<<"   -------------------   "<<std::endl;
 	std::cout<<std::setw(6)<<sId<<std::setw(10)<<sName<<std::setw(6)<<sAge<<std::endl;
 }
+
+std::ostream& operator<<(std::ostream& out, const student& s ) {
+
+	out << "Name: " << s.sName << std::endl;
+	out << "Age: " << s.sAge << std::endl;
+	out << "Id: " << s.sId << std::endl;
+	return out;
+}
